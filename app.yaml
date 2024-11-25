@@ -1,0 +1,16 @@
+runtime: java17
+instance_class: F2
+
+env_variables:
+  SPRING_PROFILES_ACTIVE: prod
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 3
+  target_cpu_utilization: 0.65
+
+handlers:
+  - url: /h2-console/*
+    script: auto
+    secure: always
+    login: admin
