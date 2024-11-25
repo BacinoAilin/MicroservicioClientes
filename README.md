@@ -6,9 +6,9 @@ This is a microservice developed in Java using Spring Boot. Its purpose is to ma
 
 This microservice allows you to perform basic CRUD operations on a list of clients. The available endpoints are as follows:
 
-- **POST /creacliente**: Creates a new client.
-- **GET /kpideclientes**: Calculates the average age and standard deviation of the ages of all clients.
-- **GET /listclientes**: Retrieves the list of clients with all their data, and calculates the probable date of death for each client based on their current age.
+- **POST /createclient**: Creates a new client.
+- **GET /kpiclients**: Calculates the average age and standard deviation of the ages of all clients.
+- **GET /listclients**: Retrieves the list of clients with all their data, and calculates the probable date of death for each client based on their current age.
 
 ## Requirements
 
