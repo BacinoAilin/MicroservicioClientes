@@ -31,7 +31,7 @@ public class ClientController {
         return clientService.createClient(client);
     }
 
-    @GetMapping("/clients")
+    @GetMapping
     @Operation(summary = "Get a list of all clients", responses = {
             @ApiResponse(responseCode = "200", description = "List retrieved successfully")
     })
@@ -39,7 +39,7 @@ public class ClientController {
         return clientService.getClients();
     }
 
-    @GetMapping("/clients/kpiclients")
+    @GetMapping("/kpiclients")
     @Operation(summary = "Get KPI of clients", responses = {
             @ApiResponse(responseCode = "200", description = "KPI retrieved successfully")
     })
@@ -47,7 +47,7 @@ public class ClientController {
         return clientService.getKpiClients();
     }
 
-    @GetMapping("/clients/deathdate")
+    @GetMapping("/deathdate")
     @Operation(summary = "Get clients with probable death dates", responses = {
             @ApiResponse(responseCode = "200", description = "List with death dates retrieved successfully")
     })
