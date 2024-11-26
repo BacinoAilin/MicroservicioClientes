@@ -25,3 +25,9 @@ This microservice allows you to perform basic CRUD operations on a list of clien
    ```bash
    git clone https://github.com/BacinoAilin/microservicio-clientes.git
    cd microservicio-clientes
+
+## API Documentation (Swagger)
+
+The API is documented using Swagger. To access the documentation, open the following link in your browser after deployment:
+
+- https://microservicio-clientes.rj.r.appspot.com/swagger-ui.html
